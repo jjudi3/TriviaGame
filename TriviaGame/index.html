@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		    
+
+		<title>Trivia Game</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+<body>
+	<div class="container">
+		<h1>Welcome to my Quiz</h1>
+		<div id="quizContent" class="row quiz">
+		    <div class="col-sm-12">
+		      <h2 id="quizHeader"></h2>
+		    </div>
+		    <div id="questions" class="row">
+		      <div class="col-sm-6"> <a data-id="1" class="btn btn-default answer ">1</a> </div>
+		      <div class="col-sm-6"> <a data-id="2" class="btn btn-default answer ">2</a> </div>
+		      <div class="col-sm-6"> <a data-id="3" class="btn btn-default answer ">3</a> </div>
+		      <div class="col-sm-6"> <a data-id="4" class="btn btn-default answer ">4</a> </div>
+		    </div>
+
+  			<div class="row pageMovement">
+    			<div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
+    			<div id="btnNext" class="col-xs-5 col-sm-4 col-sm-offset-4 col-xs-offset-2 btn btn-primary pull-right">Next</div>
+  			</div>
+
+ 			 <div class="row ">
+    			<div id="finishQuiz" class=" btn btn-success btn-block  hide ">Submit Quiz</div>
+ 			 </div>
+  			<div class="row progress">
+    			<div id="progressBar" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+  					aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:50%"> 0% Complete </div>
+  			</div>  
+  			<div id="time-left">
+  				<p>Click Start to begin, you have 10 seconds to answer 4 questions.</p>
+  				<button  onclick="myVar = setTimeout(timeUp, 10000);" id="time-left" class="btn btn-success btn-block">Start
+  				</button>
+  				
+           
+
+  			</div>
+  		</div>	
+  			  				
+  			
+	</div>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="assets/javascript/app.js"></script>
+</body>
+</html>
+
