@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eat Da Burger</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css"/>
+
+</head>
+<body>
+
+    <div class="container">
+     <div class="row">
+          <div class="col-xs-12">
+               <div class="text-center">
+                    <img id="burgerPic" src="/assets/img/burger.png">
+               </div>
+          </div>
+     </div>
+</div>
+
+<div class="container">
+     <div class="row">
+          <div class="col-sm-4 col-xs-12">
+               <h2>Burgers On the Menu</h2>
+               <ul>
+               </ul>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+               <h2>Add a Burger</h2>
+               <form class="create-update-form" action="burgers/create" method="POST">
+
+                 <div class="form-group">
+                   <label for="ca">Burger Name:</label>
+                   <input type="text" id="ca" name="name">
+                 </div>
+
+                 <button class="btn btn-primary btn-block" type="submit">Add Burger</button>
+               </form>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+               <h2>Devoured Burgers</h2>
+               <ul>
+                     <li class="text-center">
+                       Delicious Burger
+                       <form action="burgers/delete/12?_method=DELETE" method="POST">
+                         <button class="btn btn-primary btn-block" type="submit">Delete Burger!</button>
+                       </form>
+                     </li>
+               </ul>
+          </div>
+
+
+</body>
+</html>
